@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from main import Psql
 
 app = Flask(__name__)
-psql = Psql('021001')
+psql = Psql(input())
 
 
 @app.route("/", methods=['post', 'get'])
